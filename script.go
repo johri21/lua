@@ -14,7 +14,7 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/kelindar/lua/json"
+	"github.com/johri21/lua/json"
 	lua "github.com/yuin/gopher-lua"
 	"github.com/yuin/gopher-lua/parse"
 )

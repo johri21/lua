@@ -1,4 +1,4 @@
-module github.com/kelindar/lua
+module github.com/johri21/lua
 
 go 1.18
 
