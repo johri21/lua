@@ -190,6 +190,7 @@ func isValid(rt reflect.Type, at int) bool {
 	case typeBools:
 	case typeTable:
 	case typeTables:
+	case typeArray:
 	default:
 		return false
 	}
