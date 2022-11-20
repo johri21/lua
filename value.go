@@ -25,6 +25,7 @@ var (
 	typeBools   = reflect.TypeOf(Bools(nil))
 	typeTable   = reflect.TypeOf(Table(nil))
 	typeTables  = reflect.TypeOf(Tables(nil))
+	typeArray   = reflect.TypeOf(Array(nil))
 )
 
 var typeMap = map[reflect.Type]Type{
@@ -36,6 +37,7 @@ var typeMap = map[reflect.Type]Type{
 	typeBools:   TypeBools,
 	typeTable:   TypeTable,
 	typeTables:  TypeTables,
+	typeArray:   TypeArray,
 }
 
 // Type represents a type of the value
