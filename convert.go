@@ -222,7 +222,8 @@ func lvalueOf(exec *lua.LState, value any) lua.LValue {
 
 	switch val := reflect.ValueOf(value); val.Kind() {
 	case reflect.Map, reflect.Slice:
-		return ValueOf(val.Interface()).lvalue(exec)
+		v := ValueOf(val.Interface())
+		return v.lvalue(exec)
 	default:
 		return luar.New(exec, value)
 	}

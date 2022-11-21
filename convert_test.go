@@ -60,3 +60,17 @@ func TestValueOf(t *testing.T) {
 		assert.NotEmpty(t, tc.output.String())
 	}
 }
+
+func TestValueOfMap(t *testing.T) {
+	v := ValueOf([]any{
+		map[string]any{
+			"feature1": 1.0,
+			"feature2": 2.0,
+		},
+		map[string]any{
+			"feature3": 1.0,
+			"feature4": 2.0,
+		},
+	})
+	assert.Equal(t, TypeArray, v.Type())
+}
