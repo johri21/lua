@@ -130,9 +130,10 @@ func resultOf(v lua.LValue) Value {
 			case lua.LTBool:
 				return asBools(v)
 			case lua.LTTable:
-				if top.(*lua.LTable).MaxN() == 0 {
-					return asTables(v)
-				}
+				/*
+					if top.(*lua.LTable).MaxN() == 0 {
+						return asTables(v)
+					}*/
 				return asArrays(v)
 			}
 		}
